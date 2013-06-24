@@ -3,7 +3,7 @@
 // Definitions by: Mark Rendle <http://github.com/markrendle>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="../dt-angularjs/angular.d.ts" />
+/// <reference path="../dt-angular/angular.d.ts" />
 
 
 ///////////////////////////////////////////////////////////////////////////////
