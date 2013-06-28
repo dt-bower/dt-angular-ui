@@ -55,26 +55,3 @@ declare module ng.ui {
     transitionTo(state: string, params?: any, updateLocation?: bool): void;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
