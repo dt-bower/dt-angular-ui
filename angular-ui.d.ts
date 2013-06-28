@@ -3,7 +3,7 @@
 // Definitions by: Mark Rendle <http://github.com/markrendle>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="../dt-angularjs/angular.d.ts" />
+/// <reference path="../dt-angular/angular.d.ts" />
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -38,4 +38,43 @@ declare module ng.ui {
         open(): ng.IPromise;
         close(result: any): void;
     }
+  
+  interface IStateConfig {
+    templateUrl: string;
+    controller: any;
+    url?: string;
+    parent?: IStateConfig;
+  }
+    
+  interface IStateProvider {
+    state(name: string, config: IStateConfig): IStateProvider;
+  }
+  
+  interface IState {
+    params: any;
+    transitionTo(state: string, params?: any, updateLocation?: bool): void;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
