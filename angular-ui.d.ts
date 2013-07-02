@@ -53,5 +53,6 @@ declare module ng.ui {
   interface IState {
     params: any;
     transitionTo(state: string, params?: any, updateLocation?: bool): void;
+    transitionTo(state: IStateConfig, params?: any, updateLocation?: bool): void;
   }
 }
