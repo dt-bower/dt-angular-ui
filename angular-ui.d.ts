@@ -41,7 +41,7 @@ declare module ng.ui {
   
   interface IStateConfig {
     templateUrl: string;
-    controller: any;
+    controller?: any;
     url?: string;
     parent?: IStateConfig;
   }
@@ -54,5 +54,6 @@ declare module ng.ui {
     params: any;
     transitionTo(state: string, params?: any, updateLocation?: bool): void;
     transitionTo(state: IStateConfig, params?: any, updateLocation?: bool): void;
+    href(state: IStateConfig, params?: any): string;
   }
 }
