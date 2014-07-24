@@ -63,6 +63,8 @@ declare module ng.ui {
     params: any;
     transitionTo(state: string, params?: any, updateLocation?: bool): void;
     transitionTo(state: IStateConfig, params?: any, updateLocation?: bool): void;
+    transitionTo(state: string, params?: any, options?: any): void;
+    transitionTo(state: IStateConfig, params?: any, options?: any): void;
     href(state: IStateConfig, params?: any): string;
     href(stateName: string, params?: any): string;
     includes(partialStateName: string): bool;
